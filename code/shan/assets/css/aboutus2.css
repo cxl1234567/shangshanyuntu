@@ -1,0 +1,107 @@
+div.row{
+    position: relative;
+}
+.ul_lists{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+ul{padding: 0;margin: 0;list-style: none;}
+
+.ul_lists ul li{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+li div{
+    padding-left: 10px;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    float: left;
+}
+
+li.default i{
+    color: black;
+}
+li.default img{
+    display: none;
+}
+
+li.active i{
+    color: #cc0001;
+}
+li.active img{
+}
+
+li div.title{
+    width: 680px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+li div.time{
+    float: right;
+}
+
+
+.ul_lists_pointer{
+    width: 80%;
+    margin: 0 auto;
+}
+.ul_lists_pointer ul{
+    float: right;
+}
+.ul_lists_pointer ul li{
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    font-size: 17px;
+}
+
+.ul_lists_pointer ul li:last-child{
+    border-bottom: none;
+    text-align: left;
+    padding-left: 3px;
+    width: 0px;
+}
+.ul_lists_pointer ul li:first-child {
+    border-bottom: none;
+    text-align: right;
+    padding-right: 3px;
+    width: 0px;
+}
+
+.ul_lists_pointer li.active{
+    border-bottom: 2px solid #CC0001;
+    color: #CC0001;
+}
+
+@media screen and (min-width:769px) and (max-width: 1200px){
+    li div.title{ width:300px; }
+}
+
+@media screen and (max-width:768px){
+    li div.title{ width:100px; }
+    .ul_lists ul li{
+        min-width: 245px;
+    }
+    .ul_lists_pointer ul li{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:480px){
+    i div.title{ width:100px; }
+    .ul_lists_pointer ul li{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}

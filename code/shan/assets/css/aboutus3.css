@@ -1,0 +1,159 @@
+
+
+.article_left,.article_right{
+    margin-top: 40px;
+    min-width: 570px;
+}
+
+.article_img{
+    float: left;
+}
+.article_img img{
+    max-height: 335px;
+    max-width: 270px ;
+    border: 1px solid #000;
+}
+.article_text{
+    float: left;
+    max-width: 285px;
+    /*padding: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    /*max-height: 280px;*/
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.article_text h4{
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+
+.article_text .active{
+    color: #CC0001;
+    font-weight: bold;
+}
+.article_text .center_text{
+    /*padding-top: 10px;
+    padding-bottom: 10px;*/
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.article_text .center_text_auto{
+    /*height: 140px;*/
+   /* max-height: 140px;*/
+    overflow : hidden;
+    padding-bottom: 5px;
+   /* text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;*/
+    position: relative;
+    line-height: 24px;
+    height: 144px;
+}
+
+.center_text_auto::after{
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:-3px;
+    padding:0 20px 1px 45px;
+    background:url(../img/ellipsis_bg.png) repeat-y;
+}
+.toTop{
+    margin-top: 10px;
+}
+.article_icons{
+    display: flex;
+}
+.article_icons>div{
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+   /* max-height: 40px;
+    max-width: 40px;*/
+    justify-content:center;
+    align-items:center;
+}
+
+.p_center{
+    margin-top: 20px;
+}
+
+.p_center_content{
+    margin: 0 auto;
+    max-width: 470px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 445px;
+    overflow: hidden;
+}
+.p_center_content img{
+    width: 100%;
+}
+.p_center_content .p_title{
+    color: white;
+    margin-top: 10px;
+    background: url("../img/p_c_block.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 769px){ /* 这个时候文章 需要 剧中 */
+   /* .article{ margin: 0 100px; }*/
+
+}
+
+@media screen and (max-width:768px){
+    .article_right,.article_left{
+        min-width: 660px !important;
+        overflow: hidden;
+    }
+    .article_img img{
+        max-width: 300px;
+    }
+    .article_text{
+        max-width: 300px;
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .toTop{
+        margin-top: 0px;
+    }
+
+ /*   .article_icons img{
+        max-height: 30px;
+        max-width: 30px;
+    }*/
+
+}
+
+@media screen and (max-width:480px){
+
+    .article_right,.article_left{
+        min-width: 360px !important;
+        overflow: hidden;
+    }
+    .article_img img{
+        max-width: 165px;
+    }
+    .article_text{
+        max-width: 165px;
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .article_icons img{
+        max-height: 30px;
+        max-width: 30px;
+    }
+    .toTop{
+        margin-top: 0px;
+    }
+}
+
+

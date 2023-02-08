@@ -1,0 +1,21 @@
+#article_lists{
+    margin-top:70px;
+}
+
+
+
+.section { font:14px "Microsoft Yahei"; color: #000;}
+h3,h4,p{font-size: 14px;margin-left: 60px;}
+h4{color: #A60000;}
+.section p{max-width: 230px; font-size: 12px;position: relative;left: -120%;}
+.section1 p{left: 0;}
+.section1{background: url("../img/info/09Android.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section2{background: url("../img/info/10.NET.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section3{background: url("../img/info/11ios.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section4{background: url("../img/info/12Java.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section5{background: url("../img/info/14.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section6{background: url("../img/info/15.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section7{background: url("../img/info/guangying.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+.section8{background: url("../img/info/ruanzhuang.jpg") 0 0 no-repeat; background-size: 102% 95%;}
+
+

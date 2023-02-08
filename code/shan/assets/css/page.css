@@ -1,0 +1,53 @@
+	.ui-paging{
+		width: 200px;
+    	background: url(../img/paging.png) 0 0 no-repeat;
+    	font-family: Verdana,Tahoma,Arial;
+    	font-size: 0;
+    	float: right;
+    	margin-top: 20px;
+	}
+	.ui-paging-prev{
+	    display: inline-block;
+	    height: 38px;
+	    line-height: 100px;
+	    font-size: 12px;
+	    overflow: hidden;
+	    vertical-align: top;
+	    width: 40px;
+    	background: url(../img/paging.png) 0 0 no-repeat;
+	}
+	.ui-paging-prev:hover{
+		background: url(../img/paging.png) 0 -38px;
+	}
+	.ui-paging-next {
+		display: inline-block;
+   		height: 38px;
+    	line-height: 100px;
+    	font-size: 12px;
+    	overflow: hidden;
+    	vertical-align: top;
+    	width: 41px;
+    	background: url(../img/paging.png) right 0 no-repeat;
+	}
+	.ui-paging-next:hover{
+		background: url(../img/paging.png) right -38px;
+	}
+	.ui-paging-item{
+	    display: inline-block;
+	    width: 35px;
+	    height: 38px;
+	    line-height: 38px;
+	    font-size: 12px;
+	    color: #7e7e7e;
+	    text-align: center;
+	    vertical-align: top;
+	    background: url(../img/paging.png) 0 bottom;
+	    text-decoration: none;
+	}
+	.ui-paging-current {
+    	color: #e72b18;
+	}
+	.ui-paging-item:hover{
+		color: #fff;
+		background: url(../img/paging.png) -35px bottom no-repeat;
+	}
